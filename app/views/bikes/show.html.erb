@@ -1,0 +1,12 @@
+<blockquote>
+  <div>
+    Classification: <%#= @bike.category.try(:name) %>
+</div>
+<h3>Title:</h3>
+<div class="panel-heading"><%= @bike.name %></div>
+<div class="panel-body">
+  <p><%=simple_format @bike.description %></p>
+</div>
+</blockquote>
+
+<p><%= link_to "Back to index", bikes_path %></p>

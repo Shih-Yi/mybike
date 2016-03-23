@@ -1,0 +1,5 @@
+<h2>New Post</h2>
+<%= form_for @bike, url: bikes_path do |f|%>
+  <p><%= render :partial =>'form', :locals =>{:f=>f} %></p>
+  <p><%= f.submit "Create" %></p>
+<% end %>
