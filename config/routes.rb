@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :bikes do
     resources :attendees, :controller => 'bike_attendees'
   end
