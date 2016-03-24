@@ -1,0 +1,5 @@
+<% @bike.attendees.each do |attendee| %>
+  <div class="panel panel-info"> <h5>Comment:</h5>
+    <p><%=attendee.name %></p>
+    <p><%=attendee.body %></p></div>
+<%end %>
